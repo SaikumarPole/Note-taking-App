@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Example</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h4 style="text-align: center;">Your Privacy In Your Hand</h4>
+    <form style="background-color: black; padding-bottom: 2%;" id="noteForm">
+       <div style="margin-left: 5%; margin-right: 5%;" >
+        <div class="form-group w-100 pt-4">
+            <input type="text" class="form-control" id="title" placeholder="Title">
+        </div>
+        <div class="form-group w-100">
+            <textarea class="form-control" id="note" placeholder="Your Note"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Note</button>
+       </div>
+    </form>
+  </div>
+  <div class="container mt-4">
+    <h1 class="mb-4">Your Notes</h1>
+    <div class="row " id="notes">
+    
+      
+    </div>
+    
+  </div>
+  <div class="container">
+    <p id="emptyNotes" style="display: none;">Nothing to show! use 'Add Notes' section for creating the notes</p>
+  </div>
+  <script src="addNotes.js"></script>
+
+</body>
+</html>
