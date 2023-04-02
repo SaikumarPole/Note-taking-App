@@ -39,7 +39,7 @@ var form = document.getElementById("noteForm");
 form.addEventListener("submit", my_func, true);
 
 function deleteNote(obj){
-    console.log("deleting the note");
+    
 
     var closest_div = obj.closest(".noteDiv");
     closest_div.remove();
@@ -48,8 +48,8 @@ function deleteNote(obj){
 }
 
 function editNote(obj){
-    console.log("editing the note");
-    console.log(obj);
+   
+    
 
     var title = obj.parentElement.querySelector(".card-title").innerHTML;
     var text = obj.parentElement.querySelector(".card-text").innerHTML;
@@ -70,7 +70,7 @@ function checkEmptyNotes() {
     const myDiv = document.getElementById('notes');
     const emptyNotes = document.getElementById('emptyNotes');
   
-    console.log("children:",myDiv.childNodes);
+   
     if (myDiv.childNodes.length === 1) {
         console.log("nodes len 0");
       emptyNotes.style.display = 'block';
