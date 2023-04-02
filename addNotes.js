@@ -72,10 +72,10 @@ function checkEmptyNotes() {
   
    
     if (myDiv.childNodes.length === 1) {
-        console.log("nodes len 0");
+     
       emptyNotes.style.display = 'block';
     } else {
-        console.log("nodes len not 0");
+      
       emptyNotes.style.display = 'none';
     }
   }
